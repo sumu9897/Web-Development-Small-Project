@@ -1,18 +1,28 @@
 function calculateAge() {
+    const name = document.getElementById('name').value;
     const birthDate = document.getElementById('birthDate').value;
     
-    if (birthDate) {
+    if (name && birthDate) {
         const today = new Date();
         const birth = new Date(birthDate);
-        const age = today.getFullYear() - birth.getFullYear();
+        
+        let ageYears = today.getFullYear() - birth.getFullYear();
+        let ageMonths = today.getMonth() - birth.getMonth();
+        let ageDays = today.getDate() - birth.getDate();
 
-        // Check if the birthday has occurred this year
-        if (today < new Date(today.getFullYear(), birth.getMonth(), birth.getDate())) {
-            document.getElementById('result').innerText = `Your age is ${age - 1}.`;
-        } else {
-            document.getElementById('result').innerText = `Your age is ${age}.`;
+        // Adjust age for negative months or days
+        if (ageDays < 0) {
+            ageMonths--;
+            ageDays += 30; // assuming an average month length of 30 days
         }
+
+        if (ageMonths < 0) {
+            ageYears--;
+            ageMonths += 12;
+        }
+
+        document.getElementById('result').innerText = `Welcome ${name}\nAge: ${ageYears} years ${ageMonths} months ${ageDays} days`;
     } else {
-        document.getElementById('result').innerText = 'Please enter your birthdate.';
+        document.getElementById('result').innerText = 'Please enter your name and date of birth.';
     }
 }
