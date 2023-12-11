@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counter-container {
+    text-align: center;
+}
+
+#counter {
+    font-size: 3em;
+    color: #333;
+}
