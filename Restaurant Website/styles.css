@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-top: 5px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('restaurant-hero.jpg'); /* Add your hero image URL here */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.menu {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #333;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.about h2 {
+    text-align: center;
+    color: #333;
+}
+
+.reservation {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.reservation h2 {
+    text-align: center;
+}
+
+.reservationForm {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.reservationForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.reservationForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservationForm button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+
+.reservationForm button:hover {
+    background-color: #45a049;
+}
+
+.contact {
+    padding: 80px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 0;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
